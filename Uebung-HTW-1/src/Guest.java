@@ -5,10 +5,9 @@ public class Guest {
 	private String gastNachname;
 	private String anreiseDatum;
 	private String abreiseDatum;
-	private Reservation reservation;
 	private Address privateAddress;
 	private Address businessAddress;
-	
+	private Reservation reservations [];
 	
 	public Guest(String gastVorname, String gastNachname, String anreiseDatum, String abreiseDatum, Address privateAddress) {
 		
@@ -20,12 +19,8 @@ public class Guest {
 		
 	}
 
-	public Reservation getReservation() {
-		return reservation;
-	}
-
-	public void setReservation(Reservation reservation) {
-		this.reservation = reservation;
+	public Reservation[] getReservation() {
+		return reservations;
 	}
 
 	public Address getPrivateAddress() {
