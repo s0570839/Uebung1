@@ -4,17 +4,23 @@ public abstract class Zimmer {
 	private String nummer;
 	private double price;
 	private int capacity;
+	private String description;
 
-	public Zimmer() {
-
-	}
-
-	public Zimmer(String nummer, double price, int capacity) {
-
+	public Zimmer(String nummer, double price, int capacity, String description) {
+		super();
 		this.nummer = nummer;
 		this.price = price;
 		this.capacity = capacity;
+		this.description = description;
 
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public String getNummer() {
