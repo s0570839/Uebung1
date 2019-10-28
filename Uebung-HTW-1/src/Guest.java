@@ -16,6 +16,7 @@ public class Guest {
 		this.anreiseDatum = anreiseDatum;
 		this.abreiseDatum = abreiseDatum;
 		this.privateAddress = privateAddress;
+		this.reservations = reservations;
 		
 	}
 
