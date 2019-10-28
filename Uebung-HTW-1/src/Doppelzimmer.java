@@ -1,8 +1,8 @@
 
 public class Doppelzimmer extends Zimmer {
 
-	public Doppelzimmer() {
-		super();
+	public Doppelzimmer(String nummer, double price, int capacity) {
+		super(nummer, price, capacity);
 	}
 
 	@Override

@@ -6,12 +6,15 @@ public class Hotel {
 	private Address adress;
 	private Guest guests[];
 	private Zimmer zimmerList[];
+	private Suite suiteList[];
 	
 	
 	public Hotel(String hotelName, int hotelSterne) {
 		this.hotelName = hotelName;
 		this.hotelSterne = hotelSterne;
 		this.guests = guests;
+		this.zimmerList = zimmerList;
+		this.suiteList = suiteList;
 	}
 
 	public String getHotelName() {
