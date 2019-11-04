@@ -1,18 +1,21 @@
 
-public class Doppelzimmer extends Zimmer {
+public class Doppelzimmer extends Zimmer implements IBookable {
+
+	private boolean bookings[] = new boolean[365];
 
 	public Doppelzimmer(String nummer, double price, int capacity) {
 		super(nummer, price, capacity);
 	}
 
 	@Override
-	public void searchRoom() {
+	public boolean book(int day) {
 
-	}
-
-	@Override
-	public void bookRoom() {
-
+		if (bookings[day] == true) {
+			return false;
+		} else {
+			bookings[day] = true;
+			return true;
+		}
 	}
 
 }

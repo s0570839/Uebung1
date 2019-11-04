@@ -5,7 +5,9 @@ public abstract class Zimmer {
 	private double price;
 	private int capacity;
 	private String description;
-
+	
+	
+	
 	public Zimmer(String nummer, double price, int capacity) {
 		super();
 		this.nummer = nummer;
@@ -45,10 +47,6 @@ public abstract class Zimmer {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-
-	public abstract void searchRoom();
-
-	public abstract void bookRoom();
 
 	@Override
 	public String toString() {
