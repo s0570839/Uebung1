@@ -6,12 +6,11 @@ public abstract class Zimmer {
 	private int capacity;
 	private String description;
 
-	public Zimmer(String nummer, double price, int capacity, String description) {
+	public Zimmer(String nummer, double price, int capacity) {
 		super();
 		this.nummer = nummer;
 		this.price = price;
 		this.capacity = capacity;
-		this.description = description;
 
 	}
 
@@ -53,7 +52,8 @@ public abstract class Zimmer {
 
 	@Override
 	public String toString() {
-		return "Zimmer [nummer=" + nummer + ", price=" + price + ", capacity=" + capacity + "]";
+		return "Zimmer [nummer=" + nummer + ", price=" + price + ", capacity=" + capacity + ", description="
+				+ description + "]";
 	}
 
 }

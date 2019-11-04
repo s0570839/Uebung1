@@ -1,8 +1,9 @@
 
 public class Einzelzimmer extends Zimmer {
 
-	public Einzelzimmer(String nummer, double price, int capacity, String description) {
-		super(nummer, price, capacity, description);
+	public Einzelzimmer(String nummer, double price, int capacity) {
+		super(nummer, price, capacity);
+		super.setDescription("Einzelzimmer");
 	}
 
 	@Override
@@ -13,6 +14,10 @@ public class Einzelzimmer extends Zimmer {
 	@Override
 	public void bookRoom() {
 
+	}
+	
+	public String tostring() {
+		return "Einzelzimmer " + super.toString();
 	}
 
 }
